@@ -21,18 +21,20 @@ export const AddUser = (props) =>
         event.preventDefault();
         const userData = {
             id: Math.random().toString(),
-            username: user,
+            name: user,
             company : "",
+            avatar_url:"",
         };
         props.saveUser(userData);
         setUser("");
-        setShowAddUser(false);
+        //setShowAddUser(false);
     }
 
     let isShowAddUser;
     if(showAddUser)
     {
         isShowAddUser = <form onSubmit={addUserHandler}>
+            <p>Github user list[ mojombo , defunkt , pjhyett , wycats , ezmobius, ivey, evanphx, vanpelt, wayneeseguin ]</p>
             <i className="fa fa-user text-primary icon__control" ></i>
             <input type="text" value={user} onChange={userHandler} required/>
             <button type="submit" className="btn-primary">Add User</button>
