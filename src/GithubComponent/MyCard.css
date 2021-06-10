@@ -1,0 +1,23 @@
+.image{
+    width: 8rem;
+    height: 7rem;
+    margin-top: 1.3rem;
+    border-radius: 1rem;
+    margin-right: 1.2rem;
+}
+
+.myCard__control
+{
+    border-radius: 1rem;
+    width: 30%;
+    margin-top: 1rem;
+    padding-bottom: 1.5rem;
+    font-size: 1.3rem;
+    margin-left: 45rem;
+}
+
+.myCard__innerDiv
+{
+    margin-top: 1.3rem;
+}
+

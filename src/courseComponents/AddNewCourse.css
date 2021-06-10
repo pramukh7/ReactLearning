@@ -1,0 +1,66 @@
+.addNewEmployee
+{
+    margin-top: 25px;
+    height: 475px;
+    width: 600px;
+    border-radius: 2rem;
+    border: #2a2a2a;
+    background-color: darkorange;
+    margin-left: 710px;
+}
+
+.label__control{
+    font-size: 20px;
+    font-style: italic;
+    color: black;
+    margin-top: 5px;
+    font-style: italic;
+    display: block;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.input__control {
+    font: inherit;
+    padding: 0.2rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 25rem;
+    max-width: 100%;
+    margin-bottom: 10px;
+    margin-top: 8px;
+}
+
+.success-button__control{
+    font: inherit;
+    cursor: pointer;
+    padding: 1rem 1rem;
+    border: 1px solid #40005d;
+    background-color: green;
+    color: white;
+    border-radius: 12px;
+    margin-top: 45px;
+    margin-left: 25px;
+}
+
+.danger-button__control{
+    font: inherit;
+    cursor: pointer;
+    padding: 1rem 1rem;
+    border: 1px solid #40005d;
+    background-color: red;
+    color: white;
+    border-radius: 12px;
+    margin-top: 45px;
+    margin-left: 25px;
+}
+
+.label-header__control
+{
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+    color: black;
+    margin-top: 10px;
+    font-style: italic;
+}

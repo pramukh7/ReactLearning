@@ -1,0 +1,16 @@
+.button__control
+{
+    margin-top: 1.2rem;
+    padding: 1rem;
+    width: 7rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 10px;
+}
+
+.icon__control
+{
+    margin-right: 2px;
+    font-size: 30px;
+    vertical-align: middle;
+}
