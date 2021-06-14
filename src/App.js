@@ -10,7 +10,9 @@ import {Footer} from "./headerFooterComponents/footer";
 import AddNewCourse from "./courseComponents/AddNewCourse";
 import {GetMatches} from "./cricketApiComponent/GetMaches";
 import {getMatches} from "./cricketApiComponent/api";
-import MyCard from "./GithubComponent/MyCard";
+import {MyCard} from "./GithubComponent/MyCard";
+import {StarMatch} from "./starMatchGameComponent/StarMatch";
+import {ExpenseChartBar} from "./components/Expenses/ExpenseChartBar";
 
 const DUMMY_DATA = [
     {
@@ -100,7 +102,10 @@ const App = ()  =>
                         {matches.map(match => (<GetMatches matches={match} /> ))}
                     </Route>
                     <Route path="/github-users">
-                       <MyCard />
+                        <MyCard />
+                    </Route>
+                    <Route path="/star-match-game">
+                        <StarMatch />
                     </Route>
                 </Switch>
             </Router>
