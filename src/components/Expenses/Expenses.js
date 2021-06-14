@@ -3,6 +3,7 @@ import {ExpenseItems} from "./ExpenseItems";
 import "./ExpenseItem.css"
 import {ExpensesFilter} from "./ExpensesFilter";
 import {NoDataFound} from "./NoDataFound";
+import {ExpenseChartBar} from "./ExpenseChartBar";
 
 export const Expenses = (props) =>
 {
@@ -23,19 +24,22 @@ export const Expenses = (props) =>
     {
         //if length is > 0 then override expensesContext value
         expensesContent = filterExpense.map((expense) =>
-                <ExpenseItems key={expense.id}
-                              date={expense.date}
-                              title={expense.title}
-                              amount={expense.amount}
-                />
-            )
+            <ExpenseItems key={expense.id}
+                          date={expense.date}
+                          title={expense.title}
+                          amount={expense.amount}
+            />
+        )
     }
 
 
     return(
-        <div className="expenses">
-            <ExpensesFilter selected = {filterYear} onFilterExpenseData={filterExpenseDataHandler}/>
-            { expensesContent }
+        <div>
+            <ExpenseChartBar chartFilterExpenses={filterExpense}/>
+            <div className="expenses">
+                <ExpensesFilter selected = {filterYear} onFilterExpenseData={filterExpenseDataHandler}/>
+                { expensesContent }
+            </div>
         </div>
-);
+    );
 }
