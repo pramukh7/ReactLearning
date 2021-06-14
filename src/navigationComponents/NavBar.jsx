@@ -21,6 +21,9 @@ export const NavBar = () =>
                 <li className="nav-item">
                     <Link className="nav-link" to="/github-users">Github Users</Link>
                 </li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="/star-match-game">Star Match Game</Link>
+                </li>
             </ul>
         </nav>
 
